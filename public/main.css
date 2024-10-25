@@ -1,0 +1,945 @@
+/* Estilo general del cuerpo */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; /* Fondo claro */
+}
+
+/* Header con el estilo basado en la imagen */
+header {
+    background: none;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 0; /* Elimina margen debajo del header */
+}
+
+/* Contenedor para la imagen de encabezado */
+.header-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 10px;
+    border: 5px solid #ff7f00; /* Color del borde en naranja */
+    border-radius: 15px; /* Bordes redondeados */
+    width: fit-content;  /* Ajustar al tamaño del contenido */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Sombra para resaltar */
+}
+
+.header-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px; /* Bordes redondeados para la imagen */
+}
+
+
+/* Ajustar la sección inmediatamente debajo del header */
+section {
+    padding-top: 10px; /* Ajusta si hay más espacio arriba */
+    margin-top: 0; /* Elimina márgenes entre secciones */
+    padding-bottom: 0; /* Ajusta el padding inferior */
+}
+
+/* Otros ajustes para asegurarse de que no haya exceso de espacio */
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Estilo del botón de inscripción */
+.inscripciones {
+    background-color: #FF7F00; /* Naranja inicial */
+    color: white;
+    border: none;
+    padding: 15px 40px;
+    font-size: 20px;
+    border-radius: 12px;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    margin-top: 20px; /* Ajusta la distancia superior */
+    margin-bottom: 30px; /* Ajusta la distancia inferior */
+    display: block;
+    margin-left: auto;
+    margin-right: auto; /* Centrar el botón */
+}
+
+/* Efecto hover para el botón de inscripción */
+.inscripciones:hover {
+    background-color: #007BFF; /* Cambia a azul al pasar el cursor */
+    transform: scale(1.05); /* Agrandar ligeramente */
+}
+
+
+
+/* Estilo para los botones de la muestra de investigaciones */
+.btn-investigacion {
+    background-color: #FF7F00; /* Naranja */
+    color: white;
+    border: none;
+    padding: 15px 40px;
+    font-size: 20px;
+    border-radius: 12px;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    margin: 0 20px; /* Espaciado entre botones */
+    width: 300px; /* Ancho fijo para que ambos botones sean del mismo tamaño */
+    text-align: center; /* Centrar el texto en el botón */
+}
+
+/* Efectos hover para los botones de la muestra de investigaciones */
+.btn-investigacion:hover {
+    background-color: #007BFF; /* Cambia a azul */
+    transform: scale(1.05);
+}
+
+/* Estilo para los botones del concurso de ideas */
+.btn-concurso {
+    background-color: #FF7F00; /* Naranja */
+    color: white;
+    border: none;
+    padding: 15px 40px;
+    font-size: 20px;
+    border-radius: 12px;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    margin: 0 20px; /* Espaciado entre botones */
+    width: 300px; /* Ancho fijo para que ambos botones sean del mismo tamaño */
+    text-align: center; /* Centrar el texto en el botón */
+}
+
+/* Efectos hover para los botones del concurso de ideas */
+.btn-concurso:hover {
+    background-color: #007BFF; /* Cambia a azul */
+    transform: scale(1.05);
+}
+
+
+/* Estilo del contador más grande y llamativo */
+#countdown {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: #007BFF; /* Fondo con el color de la página */
+    border: 2px solid #FF7F00; /* Borde naranja */
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Sombra */
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    margin: 20px 0;
+}
+
+#countdown .time-box {
+    margin: 0 15px;
+}
+
+#countdown .time-box span {
+    display: block;
+    font-size: 60px; /* Números más grandes */
+    font-weight: bold;
+    color: #FFD700; /* Amarillo dorado */
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5); /* Sombra en los números */
+}
+
+#countdown .time-box small {
+    display: block;
+    font-size: 20px; /* Texto debajo de los números */
+    color: white;
+}
+
+.imagenes-contenedor {
+    display: flex;
+    justify-content: center; /* Cambia a center para una alineación más uniforme */
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.imagen-item {
+    flex: 1 1 45%;
+    max-width: 45%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.imagen-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Botones más grandes y con efectos */
+button, .google-form-btn, .descargar-btn {
+    background-color: #FF7F00; /* Naranja brillante */
+    color: white;
+    border: none;
+    padding: 15px 40px; /* Tamaño más grande */
+    font-size: 20px;
+    border-radius: 12px; /* Bordes más redondeados */
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3); /* Sombra en el texto */
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Sombra suave */
+    cursor: pointer;
+}
+
+/* Efectos hover para los botones */
+button:hover, .google-form-btn:hover, .descargar-btn:hover {
+    background-color: #cc6500; /* Cambiar el color al pasar el cursor */
+    transform: scale(1.1); /* Agrandar el botón ligeramente */
+}
+
+/* Estilo para el botón de "Descarga el reglamento" */
+.descargar-btn {
+    background-color: #007BFF; /* Botón azul */
+    padding: 12px 30px;
+    font-size: 18px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra */
+}
+
+.descargar-btn:hover {
+    background-color: #0056b3; /* Cambiar color al pasar el cursor */
+    transform: scale(1.1); /* Agrandar ligeramente */
+}
+
+
+/* Botones de 'Más información' con estilo */
+.mas-info-btn {
+    margin-top: 10px;
+    padding: 12px 25px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.mas-info-btn:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+/* Sección de expositores en carrusel */
+.carousel-container {
+    position: relative;
+    max-width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.carousel-slide {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+    min-width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+/* Estilo del contenedor del carrusel */
+.carousel-container {
+    position: relative;
+    width: 80%;  /* Ajusta el ancho del carrusel */
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 20px;  /* Añadir padding para que no quede tan ajustado a los bordes */
+    background-color: #e9ecef; /* Fondo suave para hacer menos contraste con las imágenes */
+    border-radius: 10px;  /* Bordes redondeados para un estilo más suave */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);  /* Sombra para resaltar el carrusel */
+}
+
+/* Estilo de la diapositiva del carrusel */
+.carousel-slide {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    justify-content: center;  /* Centrar las imágenes en el carrusel */
+}
+
+/* Estilo de cada item del carrusel */
+.carousel-item {
+    min-width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Ajustar el tamaño de las imágenes para que sean más grandes y llamativas */
+.carousel-item img {
+    width: 450px;  /* Ampliar el tamaño de la imagen */
+    height: auto;  /* Mantener proporciones */
+    object-fit: contain;  /* Mantener las proporciones sin cortar */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Mantener la sombra */
+    margin: 0 auto; /* Centrar las imágenes */
+    border-radius: 10px;  /* Añadir bordes ligeramente redondeados */
+    background-color: #fff;  /* Añadir fondo blanco para resaltar las imágenes */
+    padding: 10px;  /* Espacio entre la imagen y el borde */
+}
+
+/* Botones del carrusel: clases únicas */
+.carousel-container .carousel-prev-btn, 
+.carousel-container .carousel-next-btn {
+    background-color: rgba(0, 123, 255, 0.7);
+    border: none;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 24px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.carousel-container .carousel-prev-btn:hover, 
+.carousel-container .carousel-next-btn:hover {
+    background-color: rgba(0, 123, 255, 0.9);
+    transform: scale(1.05);
+}
+
+.carousel-container .carousel-prev-btn {
+    left: 10px;
+}
+
+.carousel-container .carousel-next-btn {
+    right: 10px;
+}
+
+/* Indicadores del carrusel (puntitos) */
+.carousel-indicators {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.carousel-indicators .indicator {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    margin: 0 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.6s ease;
+}
+
+.carousel-indicators .indicator.active {
+    background-color: #333;
+}
+
+/* Indicadores del carrusel (puntitos) */
+.carousel-indicators {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.carousel-indicators .indicator {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    margin: 0 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.6s ease;
+}
+
+.carousel-indicators .indicator.active {
+    background-color: #333;
+}
+
+
+/* Indicadores del carrusel (puntitos) */
+.carousel-indicators {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.carousel-indicators .indicator {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    margin: 0 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.6s ease;
+}
+
+.carousel-indicators .indicator.active {
+    background-color: #333;
+}
+
+
+/* Títulos más grandes y con sombras */
+h2 {
+    font-size: 38px; /* Aumentar el tamaño de los títulos */
+    text-align: center;
+    color: #007BFF;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Añadir sombra suave */
+    margin-bottom: 20px;
+    border-bottom: 2px solid #FF7F00; /* Línea naranja debajo de los títulos */
+    padding-bottom: 10px;
+    background-color: #f8f9fa; /* Fondo claro debajo del título */
+    border-radius: 10px; /* Bordes redondeados */
+    padding: 10px; /* Añadir espacio alrededor */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra alrededor */
+}
+
+/* Textos generales con más contraste */
+section p, .informacion-adicional p {
+    font-size: 18px; /* Tamaño de fuente más grande */
+    line-height: 1.6; /* Aumentar el espacio entre líneas para mayor legibilidad */
+    color: #333333; /* Color más oscuro para mayor contraste */
+    background-color: #FFFFFF; /* Fondo blanco para mayor contraste */
+    padding: 15px;
+    border-radius: 10px; /* Bordes redondeados para los textos */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+/* Estilo para hacer la lista más visible */
+ul {
+    background-color: #f9f9f9; /* Fondo claro para destacar la lista */
+    border-left: 4px solid #FF7F00; /* Barra lateral naranja */
+    padding: 20px; /* Espacio interno para que el texto respire */
+    margin: 20px 0; /* Espacio entre la lista y otros elementos */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Sombra suave para resaltar */
+    border-radius: 8px; /* Bordes redondeados */
+}
+
+/* Estilo para los elementos de la lista */
+ul li {
+    color: #333; /* Color de texto oscuro para buen contraste */
+    font-size: 18px; /* Tamaño de letra más grande */
+    line-height: 1.8; /* Espaciado entre líneas para mejor legibilidad */
+    font-weight: bold; /* Hacer el texto un poco más grueso */
+    margin-bottom: 10px; /* Espacio entre los elementos de la lista */
+    list-style-type: none; /* Eliminar los puntos de la lista */
+    position: relative;
+    padding-left: 25px;
+}
+
+/* Agregar íconos o un diseño a cada elemento de la lista */
+ul li::before {
+    content: "✔"; /* Icono de check antes del texto */
+    color: #FF7F00; /* Color del icono naranja */
+    font-size: 20px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+/* Estilo para el cronograma en "Más información" */
+.informacion-adicional {
+    margin-top: 10px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9); /* Fondo blanco semitransparente */
+    border: 2px solid #FF7F00; /* Borde naranja */
+    border-radius: 10px;
+    color: #333;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Ajustes adicionales para la sección de cronograma */
+#cronograma {
+    background-color: #FFF5E1;
+    border-left: 5px solid #FF7F00;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Logos de instituciones organizadoras */
+.logo {
+    width: 150px;
+    height: auto;
+    background: transparent;
+    margin: 10px;
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
+}
+
+/* Footer */
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #007BFF;
+    color: white;
+}
+
+/* Estilo para el contenido del footer */
+.footer-left, .footer-right {
+    display: flex;
+    align-items: center;
+}
+
+.footer-left img {
+    width: 50px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.footer-right p {
+    font-size: 16px;
+    margin: 0;
+}
+
+.footer-left p {
+    font-size: 16px;
+    margin: 0;
+}
+/* Botones de inscripción y proyectos alineados */
+.botones-inscripcion {
+    display: flex;
+    justify-content: center;
+    gap: 20px;  /* Espacio entre los botones */
+    margin-top: 20px;
+}
+
+/* Fondo suave para el contenedor de los botones */
+.botones-inscripcion-contenedor {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+    background-color: #f8f9fa; /* Fondo claro */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+/* Resaltar los títulos con un fondo claro */
+h2 {
+    font-size: 38px;
+    text-align: center;
+    color: #007BFF;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); 
+    margin-bottom: 20px;
+    background-color: #f8f9fa;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+
+/* Alineación del botón de reglamento con el título */
+.reglamento-contenedor {
+    display: flex;
+    justify-content: center;  /* Centramos tanto el título como el botón */
+    flex-direction: column;  /* Para que el botón quede debajo del título */
+    align-items: center;
+    margin-top: 20px;
+}
+
+/* Botón del reglamento alineado */
+button.descargar-btn {
+    background-color: #FF7F00;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 10px;
+    font-size: 18px;
+    text-decoration: none;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-top: 10px;  /* Añadir margen superior */
+}
+/* Contenedor de imágenes en la sección de cronograma */
+.imagenes-cronograma-contenedor {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    gap: 20px;  /* Espacio entre las imágenes */
+}
+
+.imagen-cronograma-item {
+    flex: 1 1 45%;  /* Asegura que las imágenes ocupen el 45% del espacio disponible */
+    max-width: 45%;
+    text-align: center;
+}
+
+.imagen-cronograma-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Botón de "Más información" centrado debajo de las imágenes */
+.mas-info-btn, .mostrar-menos-btn {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-top: 10px;
+}
+
+.mas-info-btn:hover, .mostrar-menos-btn:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+/* Centrar botones de inscripciones con los de "Más información" */
+.google-form-btn {
+    display: inline-block;
+    margin: 20px auto; /* Centrarlos horizontalmente */
+    text-align: center;
+    padding: 15px 30px; /* Ajustar padding para un tamaño más grande */
+    font-size: 18px;
+    background-color: #FF7F00;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.google-form-btn:hover {
+    background-color: #cc6500;
+    transform: scale(1.05);
+}
+
+/* Mejora para los logos de instituciones organizadoras */
+.imagenes-contenedor {
+    display: flex;
+    justify-content: space-around; /* Alinearlos con espacio uniforme */
+    align-items: center;
+    margin-top: 30px;
+    gap: 30px; /* Ajustar el espacio entre los logos */
+}
+
+.logo {
+    width: 180px; /* Aumentar el tamaño para mayor legibilidad */
+    height: auto; /* Mantener las proporciones */
+    background: transparent;
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1)); /* Mantener sombra para contraste */
+    transition: transform 0.2s ease;
+}
+
+.logo:hover {
+    transform: scale(1.05); /* Aumentar el tamaño en hover */
+}
+
+/* Estilo para el footer */
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #007bffd5; /* Fondo azul */
+    color: white;
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave en la parte superior */
+    margin-top: 20px;
+    border-radius: 10px; /* Bordes redondeados */
+}
+
+/* Aumentar el tamaño del logo */
+.footer-left img {
+    width: 350px; /* Logo más grande */
+    height: auto;
+    margin-right: 10px;
+}
+
+/* Alineación del contenido y eliminación de los fondos blancos */
+.footer-left p, .footer-right p {
+    font-size: 16px;
+    margin: 0;
+    background-color: transparent; /* Fondo transparente */
+    color: rgb(0, 0, 0); /* Texto blanco */
+}
+
+/* Ajustar la distribución del espacio entre los textos */
+.footer-left, .footer-right {
+    display: flex;
+    align-items: center;
+    gap: 100px; /* Espacio entre logo y texto */
+}
+
+
+/* Centrado de los botones "Más información" */
+.mas-info-btn {
+    display: block;
+    margin: 20px auto;
+    padding: 12px 30px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.mas-info-btn:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+/* Centrar los botones de inscripción */
+.botones-inscripcion-contenedor {
+    display: flex;
+    justify-content: center; /* Para alinear al centro */
+    gap: 20px; /* Añadir espacio entre los botones */
+    margin-bottom: 20px; /* Añadir espacio debajo de los botones */
+}
+
+.google-form-btn {
+    width: auto; /* Asegurarse de que los botones no se estiren */
+}
+/* Fondo suave con sombras para secciones */
+section {
+    background-color: #ffffff; /* Fondo blanco por defecto */
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+/* Alternar colores de fondo para las secciones */
+section:nth-child(even) {
+    background-color: #f9f9f9; /* Fondo gris claro para secciones pares */
+}
+
+section:nth-child(odd) {
+    background-color: #ffffff; /* Fondo blanco para secciones impares */
+}
+
+/* Fondo con gradiente suave para los títulos */
+h2 {
+    background-color: #eaf0f7; /* Fondo azul claro */
+    padding: 15px;
+    border-radius: 10px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Añadir un borde sutil a los botones para resaltarlos más */
+button, .google-form-btn, .descargar-btn {
+    border: 2px solid #FF7F00; /* Borde naranja */
+    background-color: #FF7F00; /* Mantén el color naranja del fondo */
+}
+/* Sección de Ganadores */
+.ganadores-seccion {
+    text-align: center;
+    margin-top: -80px; /* Usamos un margen negativo para moverlo más arriba */
+    min-height: 525px; /* Ajusta el valor según sea necesario */
+}
+
+.ganadores-seccion h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #ff9800; /* Puedes cambiar el color según el esquema de tu página */
+}
+
+.ganadores-contenedor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.ganador-item {
+    margin: 10px 0;
+    font-size: 1.2rem;
+}
+
+.ganador-item h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #3f51b5; /* Color para los títulos de investigador y proyecto */
+}
+
+.ganador-item p {
+    font-size: 1.2rem;
+    font-style: italic;
+    color: #757575; /* Color para los nombres del investigador y proyecto */
+}
+/* Estilos para el cartel de advertencia en móviles */
+.mobile-warning {
+    display: none; /* Oculto por defecto, lo mostramos con JS */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8); /* Fondo negro semi-transparente */
+    color: white;
+    text-align: center;
+    padding: 15px 10px;
+    z-index: 1000; /* Asegurarse de que quede encima de todo */
+    font-size: 18px;
+}
+
+.mobile-warning p {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+}
+
+.close-warning-btn {
+    background-color: #ff9800; /* Color del botón */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.close-warning-btn:hover {
+    background-color: #cc6500; /* Color más oscuro al pasar el cursor */
+}
+
+
+
+
+
+
+
+/* Adaptaciones para móviles */
+@media (max-width: 768px) {
+    /* Ajustes generales */
+    body, html {
+        overflow-x: hidden;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    /* Encabezado */
+    header h1 {
+        font-size: 36px;
+        text-align: center;
+    }
+
+    /* Ajuste de las imágenes en el carrusel */
+    .carousel-item img, .expositor-item img {
+        width: 150px;
+        height: 150px;
+        display: block;
+        margin: 0 auto;
+    }
+
+    /* Tamaño de los títulos */
+    h2 {
+        font-size: 28px;
+        text-align: center;
+    }
+
+    /* Botones */
+    button.inscripciones, .google-form-btn, .descargar-btn {
+        padding: 10px 20px;
+        font-size: 16px;
+        display: block;
+        margin: 10px auto;
+        width: 80%;
+    }
+
+    /* Botones del carrusel */
+    .prev-btn, .next-btn {
+        font-size: 18px;
+        padding: 8px;
+    }
+
+    /* Ajustes del footer */
+    footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-left, .footer-right {
+        flex-direction: column;
+        margin-bottom: 10px;
+    }
+
+    /* Ajuste de las secciones generales */
+    .imagenes-contenedor, .ganadores-seccion, .concurso-ideas-flyer, .imagenes-contenedor div, .ganadores-contenedor div, .instituciones-organizadoras, footer {
+        width: 100% !important;
+        max-width: 100vw;
+        margin: 0 auto;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    /* Centrar elementos */
+    .ganadores-seccion, .concurso-ideas-flyer, .imagenes-contenedor, .instituciones-organizadoras {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        flex-direction: column;
+    }
+
+    /* Ajuste específico para el flyer del concurso de ideas */
+    .concurso-ideas-flyer img {
+        width: 90%;
+        max-width: 100%;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    /* Reducir el margen superior e inferior de la imagen del concurso de ideas */
+    .concurso-ideas-flyer {
+        margin-top: 10px;  /* Reducir margen superior */
+        margin-bottom: 10px; /* Reducir margen inferior */
+    }
+
+    /* Ajuste para la sección de instituciones organizadoras */
+    .instituciones-organizadoras img {
+        width: 80%;
+        display: block;
+        margin: 10px auto; /* Reducir el margen para alinearlo mejor */
+    }
+
+    /* Ajustar la alineación de la sección de ganadores */
+    .ganadores-seccion {
+        margin-top: -10px;
+    }
+
+    /* Eliminar cualquier desbordamiento adicional */
+    body, html {
+        overflow-x: hidden;
+    }
+
+    /* Ajuste de márgenes generales para alinear correctamente */
+    .imagenes-contenedor, .ganadores-seccion, .concurso-ideas-flyer, .instituciones-organizadoras {
+        margin-left: 0;
+        padding-left: 0;
+    }
+
+    /* Reducir el espacio entre las secciones para que todo se vea más alineado y prolijo */
+    section {
+        margin-bottom: 20px; /* Ajustar margen inferior de cada sección */
+    }
+
+    /* Ajustar el espaciado en los botones */
+    .google-form-btn, .descargar-btn {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    /* Ajuste de espacios en el footer */
+    footer {
+        margin-top: 10px;
+    }
+}

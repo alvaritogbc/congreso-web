@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Administrador</title>
+  <link rel="stylesheet" href="/main.css">
+</head>
+<body>
+  <header>
+    <h1>Panel de Administrador</h1>
+  </header>
+  <section>
+    <h2>Proyectos Subidos</h2>
+    <ul>
+      <% files.forEach(function(file) { %>
+        <li><%= file %></li>
+      <% }); %>
+    </ul>
+  </section>
+</body>
+</html>

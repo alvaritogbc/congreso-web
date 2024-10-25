@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeras Jornadas Nacionales de Educación para Profesionales en Ciencias Económicas</title>
+    <link rel="stylesheet" href="/main.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <img src="/images/encabezado.png" alt="Encabezado Congreso" class="header-image">
+        </div>
+        <button onclick="window.open('https://www.eventbrite.com.ar/e/1039004990897?aff=oddtdtcreator', '_blank')" class="inscripciones">INSCRIPCIÓN</button>
+    </header>
+    <!-- Cartel de advertencia para dispositivos móviles -->
+<div id="mobile-warning" class="mobile-warning">
+    <p>Para una mejor visualización, se recomienda utilizar modo escritorio/computadora.</p>
+    <button id="close-warning" class="close-warning-btn">Aceptar</button>
+</div>
+
+</body>
+</html>
+
+
+    <main>
+
+        <!-- Sección de cuenta regresiva -->
+        <section>
+            <h2>⏳Cuenta regresiva para la jornada⏳</h2>
+            <div id="countdown" class="countdown"></div>
+        </section>
+
+      <!-- Sección de Expositores con carrusel -->
+<section>
+    <h2>Disertantes🎤</h2>
+    <div class="carousel-container">
+        <div class="carousel-slide" id="expositoresCarousel">
+            <div class="carousel-item">
+                <img src="/images/imagen2.jpg" alt="Expositor 1" class="expositor-foto">
+            </div>
+            <div class="carousel-item">
+                <img src="/images/expositores1.jpg" alt="Expositor 2" class="expositor-foto">
+            </div>
+            <div class="carousel-item">
+                <img src="/images/expositores2.jpg" alt="Expositor 2" class="expositor-foto">
+            </div>
+            <div class="carousel-item">
+                <img src="/images/expositores3.jpg" alt="Expositor 3" class="expositor-foto">
+            </div>
+            <div class="carousel-item">
+                <img src="/images/expositores4.jpg" alt="Expositor 4" class="expositor-foto">
+            </div>
+            <div class="carousel-item">
+                <img src="/images/expositores5.jpg" alt="Expositor 5" class="expositor-foto">
+            </div>
+            <div class="carousel-item">
+                <img src="/images/expositores6.jpg" alt="Expositor 6" class="expositor-foto">
+            </div>
+        </div>
+
+        <!-- Botones de navegación únicos para el carrusel -->
+        <button class="carousel-prev-btn" onclick="moveSlide(-1)">&#10094;</button>
+        <button class="carousel-next-btn" onclick="moveSlide(1)">&#10095;</button>
+
+        <!-- Indicadores del carrusel -->
+        <div class="carousel-indicators">
+            <span class="indicator active" onclick="currentSlide(0)"></span>
+            <span class="indicator" onclick="currentSlide(1)"></span>
+            <span class="indicator" onclick="currentSlide(2)"></span>
+            <span class="indicator" onclick="currentSlide(3)"></span>
+            <span class="indicator" onclick="currentSlide(4)"></span>
+            <span class="indicator" onclick="currentSlide(5)"></span>
+            <span class="indicator" onclick="currentSlide(6)"></span>
+        </div>
+    </div>
+</section>
+
+        <!-- Sección para Investigadores -->
+        <section>
+            <h2>¿Sos Investigador?🔍</h2>
+            <p><section>
+                <h2>🔬 Muestra de Investigaciones en Ciencias Económicas</h2>
+            
+                <p>✨ <strong>Durante las Jornadas Nacionales de Educación</strong>, tendrás la oportunidad de conocer y compartir <strong>las investigaciones más innovadoras</strong> que se están llevando a cabo en el campo de las Ciencias Económicas. ¡Un espacio único para conectar con otros investigadores y profesionales del área!</p>
+            
+                <p>👩‍🔬👨‍🔬 <strong>Investigadores de universidades de todo el país</strong> están invitados a participar y presentar sus trabajos en este foro académico, donde el intercambio de ideas y el desarrollo de nuevos enfoques será el punto clave. No pierdas la oportunidad de ser parte de esta comunidad científica que impulsa el avance de las Ciencias Económicas.</p>
+            
+                <p>💡 <strong>¡Presenta tu proyecto, inspírate y colabora!</strong> Descubre investigaciones de impacto y contribuye al crecimiento académico del país.</p>
+            </section>
+            </p>
+
+            <div class="imagenes-contenedor">
+                <div class="imagen-item">
+                    <img src="/images/investigador1.jpg" alt="Muestra de Investigaciones" class="info-imagen">
+                    <button class="mas-info-btn" data-info-id="info1">Más información</button>
+                    <div id="info1" class="informacion-adicional" style="display:none;">
+                        <section>
+                            <h2>Muestra de Proyectos de Investigación / Fecha de entrega: del 1 al 6 de noviembre</h2>
+                            <p><strong>Fechas y lugar del evento:</strong> La muestra tendrá lugar durante las Jornadas Nacionales de Educación para Profesionales en Ciencias Económicas, el 14 y 15 de noviembre de 2024 en el Consejo Profesional de Ciencias Económicas de San Juan.</p>
+            
+                            <p><strong>Público objetivo:</strong> Investigadores, docentes, y estudiantes de universidades nacionales e internacionales, así como profesionales interesados en el área de la investigación académica y el desarrollo de políticas en Ciencias Económicas.</p>
+            
+                            <p><strong>Participación activa:</strong> Además de la muestra, habrá mesas de discusión, oportunidades de networking, y paneles donde los investigadores podrán presentar sus proyectos en un ambiente de colaboración e intercambio de ideas.</p>
+            
+                            <h3>Beneficios de la participación:</h3>
+                            <ul>
+                                <li>Visibilización del trabajo de investigación a nivel nacional e internacional.</li>
+                                <li>Oportunidades para establecer vínculos y colaboraciones entre investigadores de distintas universidades.</li>
+                                <li>Fortalecimiento de la comunidad académica en el área de las Ciencias Económicas.</li>
+                            </ul>
+                            <button class="mostrar-menos-btn" data-info-id="info1">Mostrar menos</button>
+                        </section>
+                    </div>
+                </div>
+                <div class="imagen-item">
+                    <img src="/images/imagen1.jpg" alt="Investigaciones Nacionales" class="info-imagen">
+                    <button class="mas-info-btn" data-info-id="info2">Más información</button>
+                    <div id="info2" class="informacion-adicional" style="display:none;">
+                        <section>
+                            <h2>I Jornadas Nacionales de Educación para Profesionales en Ciencias Económicas</h2>
+                            <p><strong>Dirigido a:</strong> Docentes del nivel universitario y nivel medio.</p>
+            
+                            <p><strong>Fechas y lugar del evento:</strong> 14 y 15 de noviembre de 2024 en el Salón del Consejo Profesional de Ciencias Económicas de San Juan (CPCESJ).</p>
+            
+                            <p><strong>Descripción del evento:</strong> Increíbles paneles con grandes disertantes, enfocados en las temáticas más relevantes para la educación en ciencias económicas. ¡No te lo podés perder!</p>
+            
+                            <h3>Actividades principales:</h3>
+                            <ul>
+                                <li>Paneles de expertos con disertantes nacionales e internacionales.</li>
+                                <li>Mesas de discusión y talleres interactivos.</li>
+                                <li>Oportunidades de networking entre profesionales y docentes.</li>
+                            </ul>
+            
+                            <p><strong>Organizado por:</strong> Federación Argentina de Consejos Profesionales de Ciencias Económicas, Universidad Nacional de San Juan, Universidad Católica de Cuyo, Universidad de Congreso y JONAED.</p>
+                            <button class="mostrar-menos-btn" data-info-id="info2">Mostrar menos</button>
+                        </section>
+                    </div>
+                </div>
+            </div>
+            <!-- Sección de Ganadores -->
+<section class="ganadores-seccion">
+    <h2>🏅 Aquí conocerás los ganadores 🏅</h2>
+    <div class="ganadores-contenedor">
+        <div class="ganador-item">
+            <h3>Investigador Ganador:</h3>
+            <p id="nombre-investigador">Por anunciar</p>
+        </div>
+        <div class="ganador-item">
+            <h3>Proyecto Ganador:</h3>
+            <p id="nombre-proyecto">Por anunciar</p>
+        </div>
+    </div>
+</section>
+
+            
+
+            <h2>Inscríbete aquí</h2>
+            <div class="botones-inscripcion">
+                <button class="btn-investigacion" onclick="window.open('https://forms.gle/y2afUSyNYnoA3Bn19', '_blank')">Sube tu proyecto para la muestra de investigaciones</button>
+                <button class="btn-investigacion" onclick="window.open('/docs/reglamento.pdf', '_blank')" download>Descarga el reglamento AQUÍ</button>
+            </div>
+            
+            
+
+
+       
+        <!-- Sección de Cronograma de Actividades -->
+        <section>
+            <h2>Cronograma de Actividades📜</h2>
+            <div class="imagenes-cronograma-contenedor">
+                <div class="imagen-cronograma-item">
+                    <img src="/images/cronograma.jpg" alt="Día 1 - Cronograma" class="imagen-cronograma">
+                </div>
+                <div class="imagen-cronograma-item">
+                    <img src="/images/infodias.jpg" alt="Día 2 - Cronograma" class="imagen-cronograma">
+                </div>
+            </div>
+            <button class="mas-info-btn" data-info-id="cronograma-info">Más información</button>
+            <div id="cronograma-info" class="informacion-adicional" style="display:none;">
+                <!-- Aquí va todo el contenido detallado del cronograma -->
+                <section>
+                    <h2>🗓️ Día 14 de Noviembre de 2024</h2>
+                    
+                    <p><strong>16:00 HS - Apertura de las Jornadas</strong></p>
+                    
+                    <p><strong>16:15 HS - ¿Cómo despertar interés por las Ciencias Económicas entre los alumnos de nivel medio?</strong></p>
+                    <ul>
+                        <li><strong>Objetivo:</strong> Analizar distintas formas de crear o despertar una nueva mirada sobre las carreras vinculadas a las Ciencias Económicas, ante el escenario de un interés decreciente.</li>
+                        <li><strong>Exposición:</strong> Panel compuesto por Especialistas en Educación de Uruguay, España y Argentina.</li>
+                        <li><strong>Disertantes convocados:</strong></li>
+                        <ul>
+                            <li>Cr. Prof. Manuel Orta Perez (España) - Director del Departamento de Contabilidad y Economía Financiera de la Universidad de Sevilla.</li>
+                            <li>Dr. Mg. Mario Diaz Duran (Uruguay) - Presidente de la Comisión de Educación de la Asociación Interamericana de Contabilidad.</li>
+                            <li>Cr. Silvia Giordano (Argentina) - Directora Académica de la Carrera de Contador Público de UADE.</li>
+                        </ul>
+                    </ul>
+                    
+                    <p><strong>17:15 HS - Coffe Break</strong></p>
+                    
+                    <p><strong>17:45 HS - Herramientas de Inteligencia Artificial Generativa en la Educación. Repensando las prácticas pedagógicas en las Ciencias Económicas</strong></p>
+                    <ul>
+                        <li><strong>Expositor:</strong> Mg. Cr. Sergio Marquez (Senador de Mendoza).</li>
+                    </ul>
+                
+                    <p><strong>18:45 HS - Educación Emocional en las Aulas</strong></p>
+                    <ul>
+                        <li><strong>Objetivo:</strong> Brindar un enfoque de prevención y apoyo emocional que los docentes pueden brindar a sus estudiantes.</li>
+                        <li><strong>Expositor:</strong> Lic. Lucas Malaissi - Presidente de la Fundación Educación Emocional de Argentina y autor del Proyecto de Ley de Educación Emocional.</li>
+                    </ul>
+                
+                    <p><strong>20:00 HS - Cierre del Primer Día</strong></p>
+                
+                    <h2>🗓️ Día 15 de Noviembre de 2024</h2>
+                
+                    <p><strong>9:00 HS - Muestra de Proyectos de Investigación de las distintas Universidades del país</strong></p>
+                    <ul>
+                        <li><strong>Objetivo:</strong> Promover la colaboración e intercambio de conocimientos entre las instituciones educativas. Visibilizar los trabajos de Investigación y fomentar el desarrollo académico.</li>
+                        <li><strong>Forma de presentación:</strong> Muestra de los proyectos.</li>
+                    </ul>
+                
+                    <p><strong>11:00 HS - Concurso de Ideas</strong></p>
+                    <ul>
+                        <li><strong>Objetivo:</strong> Mostrar distintas opciones para implementar herramientas lúdicas en el proceso de enseñanza-aprendizaje.</li>
+                        <li><strong>Concurso de Ideas:</strong> Se propone la realización de un Concurso de Ideas para desarrollar juegos y actividades con los alumnos de nivel secundario a fin de promover el interés en las Ciencias Económicas.</li>
+                    </ul>
+                
+                    <p><strong>12:00 HS - Receso de Mediodía</strong></p>
+                
+                    <p><strong>16:00 HS - ¿Cómo se aporta desde las Ciencias Económicas a la educación?</strong></p>
+                    <ul>
+                        <li><strong>Objetivo:</strong> Evidenciar el trabajo constante desde FACPCE en el ámbito educativo.</li>
+                        <li><strong>Exposición:</strong> Panel compuesto por los actores dentro de FACPCE.</li>
+                        <li><strong>Moderador:</strong> Cr. Daniela Reynoso (Tucumán).</li>
+                        <li><strong>Presidente de FACPCE:</strong> Lic. José Simonella.</li>
+                        <li><strong>Coor. de la Comisión de Educación de FACPCE:</strong> Cr. Oscar Fernandez (CABA).</li>
+                        <li><strong>Directora del Área de Educación del CECyT:</strong> Mg. Cra. Leila Di Russo (CPCE Santa Fe).</li>
+                        
+                    </ul>
+                
+                    <p><strong>17:00 HS - Coffe Break</strong></p>
+                
+                    <p><strong>17:30 HS - Innovación y Educación</strong></p>
+                    <ul>
+                        <li><strong>Objetivo:</strong> Inspirar a la audiencia a pensar de una manera innovadora en la educación.</li>
+                        <li><strong>Exposición:</strong> Mg. Ing. Americo Sirvente (UNSJ) y Sergio Perez (UCCuyo).</li>
+                    </ul>
+                
+                    <p><strong>18:30 HS - ¿Para qué se enseña lo que se enseña?</strong></p>
+                    <ul>
+                        <li><strong>Objetivo:</strong> Exponer desde distintos puntos de vista lo que se transmite desde la enseñanza.</li>
+                        <li><strong>Exposición:</strong> Panel de distintos sectores de la educación.</li>
+                        <li><strong>Moderador:</strong> Cr. Pablo Padin (CPCE).</li>
+                        <ul>
+                            <li><strong>Ámbito Universitario:</strong> Mg. Lic. Jorge Ramirez (UNSJ) - Director del Dpto de Cs. Económicas de UNSJ.</li>
+                            <li><strong>Ámbito Docente:</strong> Cra. Liliana Sosisky (CABA) - Profesora en Docencia Superior UTN.</li>
+                            <li><strong>Ámbito Profesional:</strong> Gerente de ARCOR.</li>
+                            <li><strong>Ámbito de Gobierno:</strong> Cr. Osvaldo Rebollo - Socio de Estudio Rebollo & Asoc.</li>
+                        </ul>
+                    </ul>
+                
+                    <p><strong>20:00 HS - Cierre de las Jornadas</strong></p>
+                </section>
+                <button class="mostrar-menos-btn" data-info-id="cronograma-info">Mostrar menos</button>
+    </div>
+</section>
+            </div>
+        </section>
+        
+
+        <!-- Sección de Concurso de Ideas -->
+        <section>
+            <h2>💡Concurso de Ideas💡</h2>
+            <p><section>
+                <h2>💡 ¡Un Espacio para Compartir Ideas Innovadoras!</h2>
+            
+                <p>🚀 <strong>Las Jornadas serán el lugar perfecto</strong> para que las ideas brillen. Invitamos a <strong>profesores de ciencias económicas</strong> de todo el país a presentar y compartir sus <strong>propuestas más innovadoras</strong> en un ambiente colaborativo y lleno de inspiración.</p>
+            
+                <p>🎓 <strong>¿Tienes una idea revolucionaria?</strong> Este es tu momento para destacarte y ser parte del cambio en el campo de las Ciencias Económicas. ¡Únete a la comunidad académica y comparte tu visión para el futuro!</p>
+            </section>
+            </p>
+
+            <div class="imagenes-contenedor">
+                <div class="imagen-item">
+                    <img src="/images/concursodeideas.jpg" alt="Paneles del Concurso" class="info-imagen">
+                    <button class="mas-info-btn" data-info-id="info3">Más información</button>
+                    <div id="info3" class="informacion-adicional" style="display:none;">
+                        <p><section>
+                            <h2>💡 Concurso de Ideas</h2>
+                        
+                            <p><strong>Objetivo:</strong> Mostrar distintas opciones para implementar herramientas lúdicas en el proceso de enseñanza-aprendizaje en las Ciencias Económicas.</p>
+                        
+                            <h3>📚 Detalles del Concurso</h3>
+                            <p>El Concurso de Ideas propone el desarrollo de juegos y actividades innovadoras que puedan ser implementadas por los docentes en las aulas de nivel secundario. La finalidad es promover el interés de los alumnos por las Ciencias Económicas, integrando dinámicas lúdicas que faciliten la enseñanza y aprendizaje.</p>
+                        
+                            <h3>📝 Presentación y Evaluación</h3>
+                            <p>Los participantes del concurso deberán presentar sus ideas a través de una plataforma virtual. El jurado, compuesto por expertos en pedagogía y educación económica, evaluará los proyectos en base a criterios de innovación, aplicabilidad y efectividad en el aula.</p>
+                        
+                            <ul>
+                                <li><strong>Jurado:</strong> Compuesto por docentes universitarios y profesionales del área educativa.</li>
+                                <li><strong>Criterios de evaluación:</strong> Creatividad, innovación, impacto en la enseñanza-aprendizaje, y factibilidad de implementación.</li>
+                            </ul>
+                        
+                            <h3>🎉 Exposición y Resultados</h3>
+                            <p>Los proyectos más destacados serán presentados en el evento de cierre de las Jornadas Nacionales de Educación. Además, todos los proyectos participantes quedarán disponibles en una Galería Virtual donde podrán ser visualizados por todos los asistentes al evento.</p>
+                        
+                            <h3>🏅 Premios</h3>
+                            <p>El ganador del concurso recibirá un reconocimiento especial y la oportunidad de presentar su idea en futuras conferencias educativas a nivel nacional e internacional.</p>
+                        
+                            <p><strong>Fecha límite para la inscripción:</strong> 10 de noviembre de 2024.</p>
+                        </section>
+                        <button class="mostrar-menos-btn" data-info-id="info3">Mostrar menos</button>
+                        </p>
+                    </div>
+            </div>
+            <!-- Sección de Ganadores -->
+<section class="ganadores-seccion">
+    <h2>🏅 Aquí conocerás los ganadores 🏅</h2>
+    <div class="ganadores-contenedor">
+        <div class="ganador-item">
+            <h3>Ganador:</h3>
+            <p id="nombre-investigador">Por anunciar</p>
+        </div>
+        <div class="ganador-item">
+            <h3>Proyecto Ganador:</h3>
+            <p id="nombre-proyecto">Por anunciar</p>
+        </div>
+    </div>
+</section>
+
+
+            <section>
+                <h2>Inscríbete aquí</h2>
+                <div class="botones-inscripcion">
+                    <button class= "btn-concurso" onclick="window.open('https://forms.gle/TjorSBVCjomhvfzP9', '_blank')" class="google-form-btn">Sube tu proyecto para el concurso de ideas</button>
+                    <button class= "btn-concurso" onclick="window.open('/docs/reglamentoideas.pdf', '_blank')" download class="descargar-btn">Descarga el reglamento AQUÍ</button>
+                
+                </div>
+            
+            <section>
+                <h2>Instituciones Organizadoras</h2>
+                <div class="imagenes-contenedor">
+                    <img src="/images/logo_consejo.png" alt="Logo Consejo" class="logo">
+                    <img src="/images/logo_uns.png" alt="Logo UNS" class="logo">
+                    <img src="/images/logo_uccuyo.png" alt="Logo UCCUYO" class="logo">
+                    <img src="/images/logo_uc.png" alt="Logo UC" class="logo">
+                    <img src="/images/logo_federacion.png" alt="Logo federacion" class="logo">
+                </div>
+            </section>
+            
+            <footer>
+                <div class="footer-left">
+                    <img src="/images/logo_consejo.png" alt="CPCE San Juan">
+                    <p>Consejo Profesional de Ciencias Económicas de San Juan</p>
+                </div>
+                <div class="footer-right">
+                    <p>© 2024 Consejo Profesional de Ciencias Económicas de San Juan. Todos los derechos reservados.</p>
+                </div>
+            </footer>
+            
+
+  <!-- Script para manejar el deslizamiento y la cuenta regresiva -->
+  <script>
+    function toggleInfo(infoId) {
+        const infoElement = document.getElementById(infoId);
+        infoElement.style.display = (infoElement.style.display === 'none' || infoElement.style.display === '') ? 'block' : 'none';
+    }
+
+    // Cuenta regresiva
+    const countdown = document.getElementById('countdown');
+    const targetDate = new Date("November 14, 2024 00:00:00").getTime();
+
+    function updateCountdown() {
+        const now = new Date().getTime();
+        const distance = targetDate - now;
+
+        const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        countdown.innerHTML = `${days} días ${hours} horas ${minutes} minutos ${seconds} segundos`;
+
+
+
+        if (distance < 0) {
+            clearInterval(countdownInterval);
+            countdown.innerHTML = "¡El congreso ha comenzado!";
+        }
+    }
+
+    const countdownInterval = setInterval(updateCountdown, 1000);
+</script>
+<script src="/scripts.js"></script>
+</body>
+</html>

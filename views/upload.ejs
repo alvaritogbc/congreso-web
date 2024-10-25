@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sube tu Proyecto</title>
+    <link rel="stylesheet" href="main.css"> <!-- Ruta al CSS -->
+</head>
+<body>
+    <header>
+        <h1>Sube tu Proyecto</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Formulario de Subida</h2>
+            <form action="/upload" method="POST" enctype="multipart/form-data">
+                <input type="text" name="nombre" placeholder="Nombre" required>
+                <input type="text" name="apellido" placeholder="Apellido" required>
+                <input type="file" name="proyecto" accept=".pdf,.docx" required>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>© 2024 Congreso de Ciencias Económicas y Empresariales. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
